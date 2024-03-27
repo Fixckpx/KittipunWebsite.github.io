@@ -1,0 +1,84 @@
+/* Global body styling */
+body {
+    font-family: Arial, sans-serif; /* Specify font-family for the entire document */
+    text-align: center; /* Center-align text within the body */
+    background-color: #f0f0f0; /* Set background color */
+}
+
+/* Styling for navigation menu */
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 10px; /* Add spacing between list items */
+}
+
+nav ul li header {
+    font-size: 20px; /* Set font size for navigation headers */
+    font-weight: bold; /* Apply bold font weight to navigation headers */
+}
+
+/* Styling for game section */
+#Game {
+    color: #333333; /* Set text color */
+    margin-top: 20px; /* Add top margin */
+}
+
+#game {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: auto; /* Allow height to adjust based on content */
+}
+
+#game button {
+    margin: 10px; /* Add margin around buttons */
+    padding: 0; /* Remove default padding */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Apply border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Add transition effect for background color change */
+    width: 150px; /* Set width for buttons */
+    height: 150px; /* Set height for buttons */
+    display: block; /* Display buttons as block elements */
+    justify-content: center; /* Center content horizontally within buttons */
+    align-items: center; /* Center content vertically within buttons */
+}
+
+/* Styling for choice buttons */
+.choice-buttons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space buttons evenly */
+    margin-bottom: 20px; /* Add bottom margin */
+}
+
+.choice-buttons button {
+    padding: 10px 20px; /* Add padding to buttons */
+    font-size: 18px; /* Set font size for buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styling for choice images */
+.choice-image {
+    margin-top: 20px; /* Add top margin */
+}
+
+.choice-image img {
+    width: 100px; /* Set width for choice images */
+    height: 100px; /* Set height for choice images */
+    display: block; /* Display images as block elements */
+    margin: 0 auto; /* Center images horizontally */
+}
+
+/* Styling for game result */
+#result p {
+    margin-top: 20px; /* Add top margin */
+}
+
+#result strong {
+    font-size: 1.2em; /* Set font size for strong element */
+}

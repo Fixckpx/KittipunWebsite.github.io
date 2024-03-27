@@ -1,0 +1,185 @@
+/* Importing Google Fonts - Noto Sans */
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans';
+
+/* Body styling */
+body {
+    margin: 0px; /* Reset margin */
+    padding: 0px; /* Reset padding */
+    width: 100%; /* Set width to 100% */
+    font: 16px 'Noto Sans', sans-serif; /* Set font family and size */
+    background: -moz-linear-gradient(-45deg, #183850 0, #4ecdc4 25%, #2cb7e9 50%, #ff99ff 75%, #ff66cc 100%); /* Mozilla Firefox gradient background */
+    background: -webkit-linear-gradient(-45deg, #183850 0, #4ecdc4 25%, #2cb7e9 50%, #ff99ff 75%, #ff66cc 100%); /* Webkit gradient background */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-attachment: fixed; /* Fixed background position */
+    color: white; /* Set text color to white */
+}
+
+/* Styling for headers within list items */
+li header {
+    font-size: 14px; /* Set font size for headers */
+    font-weight: bold; /* Apply bold font weight */
+    display: block; /* Display as block element */
+    color: white; /* Set text color to white */
+    text-align: center; /* Center-align text */
+    padding: 14px 16px; /* Add padding */
+    text-decoration: none; /* Remove default underline */
+    float: inline-start; /* Align to start of inline direction */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none; /* Remove default list style */
+    margin: 0px; /* Reset margin */
+    padding: 0px; /* Reset padding */
+    overflow: hidden; /* Hide overflow content */
+    background: rgba(0, 0, 0, 0.3); /* Set background color with transparency */
+    width: 100%; /* Set width to 100% */
+}
+
+/* Styling for the first child list item */
+li:nth-child(1) {
+    margin-right: auto; /* Set margin-right to auto for first child */
+}
+
+/* Styling for anchor tags within list items */
+li a {
+    font-size: 14px; /* Set font size for anchor tags */
+    display: block; /* Display as block element */
+    color: white; /* Set text color to white */
+    text-align: center; /* Center-align text */
+    padding: 14px 16px; /* Add padding */
+    text-decoration: none; /* Remove default underline */
+    float: inline-end; /* Align to end of inline direction */
+}
+
+/* Hover effect for anchor tags except the active one */
+li a:hover:not(.active) {
+    background-color: #111; /* Change background color on hover */
+}
+
+/* Styling for active anchor tag */
+li a.active {
+    background-color: #111; /* Set background color for active anchor tag */
+}
+
+/* Section styling */
+section {
+    margin: 0px 5px; /* Set margin */
+}
+
+/* Aside styling */
+aside {
+    margin: 10px; /* Set margin */
+    padding: 20px; /* Add padding */
+    border-radius: 5px; /* Apply border radius */
+}
+
+/* Footer styling */
+footer {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    padding: 10px; /* Add padding */
+    background: rgba(0, 0, 0, 0.3); /* Set background color with transparency */
+}
+
+/* Styling for menu links */
+.menu {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove default underline */
+}
+
+/* Styling for image */
+img {
+    max-width: 50%; /* Set max width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Display as block element */
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Styling for reference links */
+.ref {
+    font-size: 16px; /* Set font size */
+    margin-top: 10px; /* Add top margin */
+}
+
+.ref a {
+    color: black; /* Set text color */
+    text-decoration: none; /* Remove default underline */
+}
+
+.ref a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.ref b {
+    font-weight: bold; /* Apply bold font weight */
+    margin-left: 5px; /* Add left margin */
+}
+
+/* Media query for larger screens (minimum width 900px) */
+@media screen and (min-width:900px) {
+    .mainGrid {
+        display: grid; /* Use grid layout */
+        grid-template-columns: 3fr 1fr; /* Define grid columns */
+        gap: 20px; /* Set gap between grid items */
+        padding: 20px; /* Add padding */
+    }
+
+    /* Edit font size for larger screens */
+    li header {
+        font-size: 16px; /* Set font size */
+    }
+
+    li a {
+        font-size: 16px; /* Set font size */
+    }
+}
+
+/* Media query for very large screens (minimum width 1400px) */
+@media screen and (min-width:1400px) {
+    .mainGrid {
+        display: grid; /* Use grid layout */
+        grid-template-columns: 3fr 1fr; /* Define grid columns */
+        gap: 20px; /* Set gap between grid items */
+        padding: 20px; /* Add padding */
+    }
+
+    .gridContent {
+        display: grid; /* Use grid layout */
+        grid-template-columns: 50% 50%; /* Define grid columns */
+    }
+}
+
+/* Styling for centered text */
+.centered-text {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Styling for general anchor tags */
+a {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove default underline */
+}
+
+/* Styling for margin of aside elements */
+.aside-margin {
+    margin-left: 20px; /* Add left margin */
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove default underline */
+}
+
+/* Center text within aside */
+aside {
+    text-align: center; /* Center text */
+}
+
+/* Styling for images within aside */
+aside img {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    width: 50%; /* Set width to 50% */
+    height: 30%; /* Set height to 30% */
+    display: block; /* Display as block element */
+}
